@@ -1,12 +1,12 @@
 # tpmi
 ## 1. Phenotyping
-### 1.1 Diseases and symptoms (phecode)
+### 1.1 Diseases and symptoms (phecode: https://phewascatalog.org/)
 ### 1.2 Anthropometric and laboratory measurements
 ## 2. Genotyping QC and imputation 
 ## 3. Genome-wide association study
-### 3.1 PCAir, PCRelate, and PRIMUS
-### 3.2 GENESIS (effective sample size estimation)
-### 3.3 PLINK
+### 3.1 PCAir, PCRelate, and PRIMUS (GENESIS: https://bioconductor.org/packages/release/bioc/html/GENESIS.html; PRIMUS: https://primus.gs.washington.edu/primusweb/)
+### 3.2 Generalized linear mixed model (SAIGE: https://saigegit.github.io/SAIGE-doc/)
+### 3.3 Generalized linear model (PLINK2: https://www.cog-genomics.org/plink/2.0/)
 ## 4. Post GWAS analysis
 ### 4.1 Known loci replication (PGRM: https://github.com/PheWAS/pgrm)
 ### 4.2  Heritability estimation (LDSC: https://github.com/bulik/ldsc)
