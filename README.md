@@ -10,7 +10,7 @@
 ## 4. Post GWAS analysis
 ### 4.1 Known loci replication (PGRM: https://github.com/PheWAS/pgrm)
 ### 4.2 Fine-mapping (SuSiE: https://stephenslab.github.io/susieR/index.html) 
-### 4.3 Heritability estimation (LDSC: https://github.com/bulik/ldsc)
+### 4.3 Heritability estimation (LDSC: https://github.com/bulik/ldsc, LSH: https://github.com/svenojavee/LSH )
 ### 4.4 Gene-level heritability estimation (h2gene: https://github.com/bogdanlab/h2gene )
 ### 4.4 Colocalization (with eQTL and pairwise, coloc: https://chr1swallace.github.io/coloc/index.html, GTEx v.8: https://gtexportal.org/ )
 ### 4.5 Genetic correlation and Clustering (LDSC: phenome-wide; popcorn: across populations https://github.com/brielin/Popcorn)
