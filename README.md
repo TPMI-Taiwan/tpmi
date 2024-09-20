@@ -9,12 +9,12 @@
 ### 3.3 Generalized linear model (PLINK2: https://www.cog-genomics.org/plink/2.0/)
 ## 4. Post GWAS analysis
 ### 4.1 Known loci replication (PGRM: https://github.com/PheWAS/pgrm)
-### 4.2  Heritability estimation (LDSC: https://github.com/bulik/ldsc)
-### 4.3 Genetic correlation (LDSC: phenome-wide; popcorn: across populations https://github.com/brielin/Popcorn)
-### 4.4 Fine-mapping (SuSie: https://stephenslab.github.io/susieR/index.html) 
-### 4.5 Colocalization (with eQTL and pairwise, coloc: https://chr1swallace.github.io/coloc/index.html)
+### 4.2 Fine-mapping (SuSie: https://stephenslab.github.io/susieR/index.html) 
+### 4.3 Heritability estimation (LDSC: https://github.com/bulik/ldsc)
+### 4.4 Gene-level heritability estimation (h2gene)
+### 4.4 Colocalization (with eQTL and pairwise, coloc: https://chr1swallace.github.io/coloc/index.html, GTeX v.8)
+### 4.5 Genetic correlation and Clustering (LDSC: phenome-wide; popcorn: across populations https://github.com/brielin/Popcorn)
 ## 5. PRS
-### 5.1 Individual phenotype (LDPred2, Lassosum2, PRScs, MegaPRS, SBayesR, PRSice-2)
+### 5.1 Individual phenotype (LDPred2, Lassosum2, PRScs, MegaPRS, SBayesR)
 ### 5.2 Mult-phenotype (PRSmix: https://github.com/buutrg/PRSmix)
-### 5.3 Performance evaluation 
-### 5.4 TWB validation 
+### 5.3 Performance evaluation (R^2 and AUC)
