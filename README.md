@@ -1,4 +1,4 @@
-# tpmi
+# TPMI
 ## 1. Phenotyping
 ### 1.1 Diseases and symptoms (phecode: https://phewascatalog.org/)
 ### 1.2 Anthropometric and laboratory measurements
