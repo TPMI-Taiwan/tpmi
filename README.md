@@ -5,7 +5,7 @@
 ## 2. Genotyping QC and imputation 
 See 2.2-Imputation: `phasing.sh` and `imputation.sh`
 ## 3. Genome-wide association study
-### 3.1 PCAir, PCRelate, and PRIMUS (GENESIS: https://bioconductor.org/packages/release/bioc/html/GENESIS.html; PRIMUS: https://primus.gs.washington.edu/primusweb/)
+### 3.1 PC-AiR, PC-Relate, and PRIMUS (GENESIS: https://bioconductor.org/packages/release/bioc/html/GENESIS.html; PRIMUS: https://primus.gs.washington.edu/primusweb/)
 ### 3.2 Generalized linear mixed model (SAIGE: https://saigegit.github.io/SAIGE-doc/)
 See 3.2-SAIGE_GWAS: `SAIGE.sh` and `SAIGE_qtrait.sh`
 ### 3.3 Generalized linear model (PLINK2: https://www.cog-genomics.org/plink/2.0/)
@@ -24,7 +24,7 @@ See 4.5-Colocalization: `Coloc.R`
 ### 4.6 Genetic correlation and Clustering (LDSC: phenome-wide; popcorn: across populations https://github.com/brielin/Popcorn)
 See 4.6-GeneticCorrelation: `genetic_correlation.sh` and `popcorn.sh`
 ## 5. PRS
-### 5.1 Individual phenotype (LDPred2, Lassosum2, PRScs, MegaPRS, SBayesR)
+### 5.1 Individual phenotype (LDpred2, Lassosum2, PRS-CS, MegaPRS, SBayesR)
 See 5.1-PRS: `LDpred2_lassosum2_phecode.R`, `LDpred2_lassosum2_qtrait.R`, `PRScs.sh`, `MegaPRS.sh` and `SBayesR.sh`
 ### 5.2 Mult-phenotype (PRSmix: https://github.com/buutrg/PRSmix)
 See 5.2-MultiPRS: `run_PRSmix_by_phecode.R`
