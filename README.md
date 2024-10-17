@@ -101,7 +101,7 @@ Five popular PRS tools were used for the single traits PRS model building
 * [LDpred2](https://privefl.github.io/bigsnpr/articles/LDpred2.html)  (`LDpred2_lassosum2_phecode.R` and `LDpred2_lassosum2_qtrait.R`)
 * [Lassosum2](https://privefl.github.io/bigsnpr/articles/LDpred2.html)
 * [PRS-CS](https://github.com/getian107/PRScs) (`PRScs.sh`)
-* MegaPRS (`MegaPRS.sh`)
+* [MegaPRS](https://dougspeed.com/megaprs/) (`MegaPRS.sh`)
 * [SBayesR](https://cnsgenomics.com/software/gctb/#SBayesRTutorial) (`SBayesR.sh`)
 
 ### 5.2 Mult-phenotype
