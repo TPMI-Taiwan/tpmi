@@ -1,6 +1,6 @@
-## Genotyping QC 
+# Genotyping QC 
     
-### Initial QC by batch
+## Initial QC by batch
 * QC by batch (`01_qc_by_batch/01_exe.sh`)
   * Remove SNPs with missing rate > 10%
   * Remove individuals with missing rate > 10%
@@ -8,7 +8,7 @@
 * Identify SNPs with the largest difference in missing rate > 0.02 between any two batches. (`02_snp_missing_diff/02_exe.sh`)
 * Identify SNPs with difference in allele frequency > 0.1 between any two batches. (`03_snp_freq/03_exe_freq.sh`)
 
-### Merge batches and basic QC
+## Merge batches and basic QC
 * Merge batches from `01_qc_by_batch`, then remove SNPs identified in `02_snp_missing_diff` and `03_snp_freq`. (`04_merge/04_exe_uniq.sh`)
 * QC after merge (`05_merge_qc/05_exe.sh`)
   * Remove TPMI special SNPs
@@ -16,7 +16,7 @@
   * Remove individuals with missing rate > 5%
   * Remove SNPs with missing rate > 2%
 
-### Population assignment
+## Population assignment
 
 The EAS (East Asian) population was identified using PCA and the proportion of genetic ancestry was determined using [ADMIXTURE](https://dalexander.github.io/admixture/) with 1000 Genomes Project and SGDP as reference panel.
 1. PCA  (`06_pca/06_exe.sh`)
@@ -30,7 +30,7 @@ The EAS (East Asian) population was identified using PCA and the proportion of g
 
 <img src="https://github.com/TPMI-Taiwan/tpmi-qc/blob/readme-edits/06_pca/pca.PC1PC2.1kg.png" alt="Image" width="450" height="450"><img src="https://github.com/TPMI-Taiwan/tpmi-qc/blob/readme-edits/06_pca/pca.PC1PC2.cut_eas.tpm1.png" alt="Image" width="450" height="450">
 
-### QC within Han
+## QC within Han
 Script `09_qc_within_han/09_exe.sh`.
   * Basic QC:
       * Remove SNPs with missing rate > 2%
@@ -43,12 +43,12 @@ Script `09_qc_within_han/09_exe.sh`.
   * Remove SNPs with MAF < 0.01
   * Retain only SNPs on autosome
   * Remove SNPs that fail HWE test (P-value < 1e-6)
-###  Batch GWAS
+##  Batch GWAS
 Script `10_batch_gwas/table.py` and `10_batch_gwas/runPCAir_afterHanQC.sh` and `10_batch_gwas/runPCAir_PCRelate_afterSAIGE.sh`.
 * Perform GWAS using [SAIGE](https://saigegit.github.io/SAIGE-doc/) on pairs of batches
     * Remove significant SNPs (p-value < 5e-8) to shrink the batch effects
  
-### Pedigree Reconstruction and Maximum Unrelated Set
+## Pedigree Reconstruction and Maximum Unrelated Set
 
 **Max unrelated set and Pedigree reconstruction**   
 
