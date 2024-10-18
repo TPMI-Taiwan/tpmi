@@ -11,7 +11,7 @@ Phasing was conducted with [SHAPEIT5](https://odelaneau.github.io/shapeit5/). Ge
 
 ## 3. Genome-wide association study
 ### 3.1 PC-AiR, PC-Relate, and PRIMUS 
-[PC-AiR](https://rdrr.io/bioc/GENESIS/man/pcair.html) and [PC-Relate](https://rdrr.io/bioc/GENESIS/man/pcrelate.html) ([GENESIS](https://bioconductor.org/packages/release/bioc/html/GENESIS.html) package) were used for PCA and relatedness estimation and [PRIMUS](https://primus.gs.washington.edu/primusweb/) was used for identifying the maximum unrelated set. (Script `10_batch_gwas/runPCAir_afterHanQC.sh`, `10_batch_gwas/runPCAir_PCRelate_afterSAIGE.sh` and `11_PRIMUS/11_exe.sh` in `2.1-Genotyping_QC` directory.)
+[PC-AiR](https://rdrr.io/bioc/GENESIS/man/pcair.html) and [PC-Relate](https://rdrr.io/bioc/GENESIS/man/pcrelate.html) ([GENESIS](https://bioconductor.org/packages/release/bioc/html/GENESIS.html) package) were used for PCA and relatedness estimation and [PRIMUS](https://primus.gs.washington.edu/primusweb/) was used for identifying the maximum unrelated set. See the [pedigree reconstruction](https://github.com/TPMI-Taiwan/tpmi/tree/main/2.1-Genotyping_QC#pedigree-reconstruction-and-maximum-unrelated-set) in genotyping QC for details.
 
 ### 3.2 Generalized linear mixed model
 [SAIGE](https://saigegit.github.io/SAIGE-doc/) was applied for the mixed effect model GWAS (`SAIGE.sh` and `SAIGE_qtrait.sh`).
