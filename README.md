@@ -1,13 +1,13 @@
 ## 1. Phenotyping
-Disease was defined by [phecodes](https://phewascatalog.org/). Quantitative traits were extracted from the EMR, including anthropometric, vital signs and laboratory measurements. The flow charts of quality control for quantitative traits can see [here](1-Phenotyping).
+Disease was defined by [phecodes](https://phewascatalog.org/). Quantitative traits were extracted from the EMR, including anthropometric, vital signs and laboratory measurements. The flow charts of quality control for quantitative traits can see [1-Phenotyping](1-Phenotyping).
 
 ## 2. Genotyping QC and imputation 
     
 ### 2.1 Genotyping QC
-The quality control for genotyping can see [here](2.1-Genotyping_QC).
+The quality control for genotyping can see [2.1-Genotyping_QC](2.1-Genotyping_QC).
 
 ### 2.2 Imputation
-Phasing was conducted with [SHAPEIT5](https://odelaneau.github.io/shapeit5/). Genome imputation was carried out with [IMPUTE5](https://jmarchini.org/software/#impute-5). (`phasing.sh` and `imputation.sh`)
+Phasing was conducted with [SHAPEIT5](https://odelaneau.github.io/shapeit5/). Genome imputation was carried out with [IMPUTE5](https://jmarchini.org/software/#impute-5). See [2.2-Imputation](2.2-Imputation) for details.
 
 ## 3. Genome-wide association study
 ### 3.1 PC-AiR, PC-Relate, and PRIMUS 
