@@ -15,12 +15,12 @@ Total of 1,498 Taiwan Biobank WGS data aligned by BWA-MEM and variant called by 
     -   Remove SNPs with minor allele count \< 2
     -   Remove SNPs with HWE p-value \< 1e-10
     -   Remove multiallelic variants
-2.  Two different based phasing tools, [WhatsHap](https://whatshap.readthedocs.io/en/latest/) and [SHAPEIT4](https://odelaneau.github.io/shapeit4/), were used for estimating phase set by sequence read and whole genome haplotype phasing with the phase set. (Script Build_reference.sh)
+2.  Two different based phasing tools, [WhatsHap](https://whatshap.readthedocs.io/en/latest/) and [SHAPEIT4](https://odelaneau.github.io/shapeit4/), were used for estimating phase set by sequence read and whole genome haplotype phasing with the phase set. (`Build_reference.sh`)
 
 ## Genotype Imputation
 
-1.  Array data that passed QC was converted to VCF using [PLINK2](https://www.cog-genomics.org/plink/2.0/) and phased using [SHAPEIT5](https://odelaneau.github.io/shapeit5/). (Script Phasing.sh)
-2.  We divided the samples into batches of 3,000 to balance memory consumption and processing time for whole genome imputation using [bcftools](https://samtools.github.io/bcftools/bcftools.html) and [IMPUTE5](https://jmarchini.org/software/#impute-5) with pre-built reference panel. (Script Imputation.sh)
+1.  Array data that passed QC was converted to VCF using [PLINK2](https://www.cog-genomics.org/plink/2.0/) and phased using [SHAPEIT5](https://odelaneau.github.io/shapeit5/). (`Phasing.sh`)
+2.  We divided the samples into batches of 3,000 to balance memory consumption and processing time for whole genome imputation using [bcftools](https://samtools.github.io/bcftools/bcftools.html) and [IMPUTE5](https://jmarchini.org/software/#impute-5) with pre-built reference panel. (`Imputation.sh`)
 3.  Post imputation QC by batch
     -   Remove SNPs with Info score \< 0.6 by each batch
     -   Remove SNPs with MAF \< 0.1% by each batch
